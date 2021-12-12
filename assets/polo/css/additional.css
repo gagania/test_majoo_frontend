@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 8, 2017, 10:49:12 AM
+    Author     : gaga
+*/
+
+.table > thead > tr > th {
+    vertical-align:middle !important;
+    text-align:center;
+    white-space: nowrap;
+}
+
+.btn-first {
+    background: url("../images/button/page-first.gif") no-repeat scroll center;
+    border: 0 none;
+    cursor: pointer;
+}
+.btn-prev {
+    background: url("../images/button/page-prev.gif") no-repeat scroll center;
+    border: 0 none;
+    cursor: pointer;
+}
+.btn-next {
+    background: url("../images/button/page-next.gif") no-repeat scroll center;
+    border: 0 none;
+    cursor: pointer;
+}
+.btn-next[disabled] {
+    background: url("../images/button/page-next-disabled.gif") no-repeat scroll center;
+    border: 0 none;
+    cursor: pointer;
+}
+.btn-last {
+    background: url("../images/button/page-last.gif") no-repeat scroll center;
+    border: 0 none;
+    cursor: pointer;
+}
+.btn-last[disabled] {
+    background: url("../images/button/page-last-disabled.gif") no-repeat scroll center;
+    border: 0 none;
+    cursor: pointer;
+}
+
+.pnumber {
+    width : 40px;
+    height: 18px;    
+    /*margin-top:10px;*/
+}
+.pnumber-view{
+    width : 20px;
+    /*height: 14px;*/    
+    /*margin-top:10px;*/
+}
+
+.paging_area {
+    width:22%;
+    margin:0 auto;
+}
+
+@media (max-width: 767px) {
+  .overflow_table {
+    overflow-x:auto;
+  }
+  #search_input {
+      float:none;
+  }
+}
