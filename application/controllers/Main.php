@@ -310,7 +310,7 @@ class Main extends CI_Controller {
         if (!$this->session->userdata('token')) { 
             redirect('/');
         }
-        $url = "http://localhost/majooapi/merchants";
+        $url = "http://localhost/test_majoo_api/merchants";
         $ch = curl_init($url);
         $data_string = '';
          if ($this->session->userdata('user_id') != '') {
@@ -346,7 +346,7 @@ class Main extends CI_Controller {
         if (!$this->session->userdata('token')) { 
             redirect('/');
         }
-        $url = "http://localhost/majooapi/outlets";
+        $url = "http://localhost/test_majoo_api/outlets";
         $ch = curl_init($url);
         $data_string = '';
          if ($this->session->userdata('user_id') != '') {
@@ -377,7 +377,7 @@ class Main extends CI_Controller {
         if (!$this->session->userdata('token')) { 
             redirect('/');
         }
-        $url = "http://localhost/majooapi/outlets";
+        $url = "http://localhost/test_majoo_api/outlets";
         $ch = curl_init($url);
         $data_string = '';
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
@@ -405,7 +405,7 @@ class Main extends CI_Controller {
         if (!$this->session->userdata('token')) { 
             redirect('/');
         }
-        $url = "http://localhost/majooapi/merchant/omzet";
+        $url = "http://localhost/test_majoo_api/merchant/omzet";
         $ch = curl_init($url);
         $data_string = '';
          if ($merchantId != '') {
@@ -448,7 +448,7 @@ class Main extends CI_Controller {
         if (!$this->session->userdata('token')) { 
             redirect('/');
         }
-        $url = "http://localhost/majooapi/outlets/all";
+        $url = "http://localhost/test_majoo_api/outlets/all";
         $ch = curl_init($url);
         $data_string = '';
          if ($outletId != '') {
@@ -480,7 +480,7 @@ class Main extends CI_Controller {
         if (!$this->session->userdata('token')) { 
             redirect('/');
         }
-        $url = "http://localhost/majooapi/outlet/omzet";
+        $url = "http://localhost/test_majoo_api/outlet/omzet";
         $ch = curl_init($url);
         $data_string = '';
          if ($outletId != '') {
